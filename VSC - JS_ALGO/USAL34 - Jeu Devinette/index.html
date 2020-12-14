@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number guessing game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Deviner un nombre</h1>
+      <p>
+        Nous avons généré un nombre aléatoire entre 1 et 1000, tentez de le
+        deviner en 20 tours maximum. Pour chaque tentative, nous vous dirons si
+        votre estimation est trop ou pas assez élevée.
+      </p>
+      <form>
+        <label for="guessField">Entrez votre proposition :</label>
+        <input
+          id="guessField"
+          type="number"
+          name="guessField"
+          placeholder="12"
+        />
+        <button id="validateButton" type="submit">Valider</button>
+      </form>
+      <p id="timer"></p>
+      <p id="guessCountLabel">0/20</p>
+      <div id="guessList"></div>
+      <p id="target"></p>
+      <button id="restartButton">Rejouer</button>
+    </div>
+  </body>
+</html>
