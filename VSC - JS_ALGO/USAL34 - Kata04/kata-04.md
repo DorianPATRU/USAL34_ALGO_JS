@@ -22,30 +22,30 @@ const january = [
   },
   {
     name: "Salaire",
-    amount: "1750"
-  }
+    amount: "1750",
+  },
 ];
 
 const february = [
   {
     name: "BMW",
-    amount: "90000",
+    amount: "-90000",
   },
   {
     name: "Chaussettes",
-    amount: "4.99",
+    amount: "-4.99",
   },
   {
     name: "Salaire",
-    amount: "1750"
-  }
+    amount: "1750",
+  },
 ];
 
 const march = [
   {
     name: "Course",
-    amount: "-287.54"
-  }
+    amount: "-287.54",
+  },
   {
     name: "Gommettes",
     amount: "-2.99",
@@ -60,8 +60,8 @@ const march = [
   },
   {
     name: "Salaire",
-    amount: "1750"
-  }
+    amount: "1750",
+  },
 ];
 
 function getTotalBills(bills) {
@@ -73,8 +73,7 @@ function getTotalBills(bills) {
   // 5. renvoyer une chaine de caractère
 }
 
-
 getTotalBills(january); // => "Dépense : 92.57 € | Recette : 1750 € | Total: 1657.43 €"
-getPlanetName(february); // => "Dépense : 90004.99 € | Recette : 1750 € | Total: -88254.99 €"
-getPlanetName(march); // => "Dépense : 345.51 € | Recette : 1750.00 € | Total: 1404.49 €"
+getTotalBills(february); // => "Dépense : 90004.99 € | Recette : 1750 € | Total: -88254.99 €"
+getTotalBills(march); // => "Dépense : 345.51 € | Recette : 1750.00 € | Total: 1404.49 €"
 ```
