@@ -7,9 +7,9 @@ console.log(button2)
 function clicsurbutton2(){
     let test = document.querySelector("#test")
     let input = document.createElement("INPUT");
-    input.setAttribute("type", "text");
-    test.appendChild(input);
 
+    input.setAttribute("type", "text");
+    test.appendChild(input );
 
 }
 
