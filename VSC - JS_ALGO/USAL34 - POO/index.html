@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let film = {
+            titre: "Jurassik Park",
+            realisateur: "Steven Spielberg",
+            annee: 1993,
+            serie: ["Jurrasik Park", "Le Monde perdu : Jurrasik Park"],
+            presentation: function() {
+                //return 'un texte'
+               return this.titre + " réalisé par " + this.realisateur + ' en ' + this.annee
+            } 
+        }
+
+        // console.log(film.titre, film['titre'], film.serie[1])
+        //console.log(film.presentation())
+        // "Jurrasik Park, réalisé par Steven Spielberg en 1993"
+
+        let hello = "Bonjour"
+        hello.toUpperCase()
+        console.log(hello, hello.length)
+
+    </script>
+</body>
+</html>
