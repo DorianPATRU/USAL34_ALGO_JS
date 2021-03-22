@@ -1,7 +1,6 @@
 let button1 = document.querySelector("#button1");
 let button2 = document.querySelector("#button2");
-console.log(button2)
-
+let b = document.body;
 
 
 function clicsurbutton2(){
@@ -19,7 +18,11 @@ function getValue() {
     let participants = document.querySelectorAll("#participant");
 
     for (let element of participants){
-      console.log(element.value)
+      let texteAffiche = document.createElement('p')
+      let contenuTexte = document.createTextNode("Test")
+      let test = texteAffiche.appendChild(contenuTexte)
+
+      b.appendChild(test)
     }
 
 }
