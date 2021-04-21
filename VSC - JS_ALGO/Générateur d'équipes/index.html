@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="spectrum spectrum--medium spectrum--light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS | Random Team App</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+      integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="layout" class="pure-g">
+      <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+          <h1 class="brand-title">Générateur d'équipes aléatoires</h1>
+          <hr />
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <button
+                  id="random-button"
+                  type="button"
+                  class="pure-button pure-button-primary"
+                >
+                  Créer les équipes ❯
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <form class="pure-form pure-form-aligned">
+            <h3>Nombre de participants par équipe</h3>
+            <input
+              type="text"
+              id="personByTeam"
+              name="personByTeam"
+              placeholder="3"
+              value="3"
+            />
+          </form>
+
+          <form id="participant-form" class="pure-form pure-form-aligned">
+            <h3>Participants</h3>
+            <div id="inputList">
+              <input
+                type="text"
+                name="participant-1"
+                placeholder="Participant 1"
+              />
+              <input
+                type="text"
+                name="participant-2"
+                placeholder="Participant 2"
+              />
+            </div>
+
+            <button
+              id="addParticipant"
+              type="button"
+              class="pure-button pure-button-primary"
+            >
+              Ajouter un participant ❯
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="content pure-u-1 pure-u-md-3-4">
+        <div style="display: none">
+          <div class="team">
+            <h1></h1>
+
+            <ul></ul>
+          </div>
+        </div>
+        <div id="teams"></div>
+      </div>
+    </div>
+  </body>
+</html>
