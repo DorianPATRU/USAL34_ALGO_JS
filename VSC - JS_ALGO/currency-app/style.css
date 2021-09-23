@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e2e8f0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.wrapper {
+  width: 28rem;
+  margin: auto;
+  padding-bottom: 10rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(60, 54, 107);
+  margin-top: 0;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 100%;
+  padding-right: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.125rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: rgba(60, 54, 107, 0.2);
+}
+
+input:focus {
+  outline: none;
+  border-color: rgba(60, 54, 107, 1);
+}
+
+.currency-label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem;
+}
+
+.select-currency {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+select {
+  display: block;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  line-height: 1.25;
+  border-width: 1px;
+  border-radius: 0.25rem;
+}
